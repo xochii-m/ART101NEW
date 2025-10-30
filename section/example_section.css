@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(237, 211, 198);
+    font-family:cursive;
+    color:rgb(110, 35, 35);}
+
+button {
+    background-color: rgb 237, 211, 198;
+    color: rgb (110, 35, 35);
+    border-radius: 10px;}
+
+button-hover{
+    background-color: rgb(110, 35, 35);
+    font-family: cursive;
+    border: dotted 10px;}
+
+img {height: 100px;
+    width: 150px;
+    display: flex;
+    border: 4px dashed red;}
+img {height: 100px;
+    width: 150px;
+    display: flex;}

@@ -1,0 +1,71 @@
+<!doctype html>
+
+  <link href="env03.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+  <script src="env03.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> whale island </title>
+
+  <head>
+    <em>
+      <H1>watch out for the whales here, they're very friendly!</h1>
+   </em>
+  </head>
+  
+  <body style="text-align:center;">
+    <h2> </h2>
+
+    <button onclick="myFunc()">
+   night hunting mode </button>
+  
+   <h2> </h2>
+
+  <script>
+    let result = document.getElementById("night");
+
+    function changeColor(color) {
+      document.body.style.background = color;
+  }
+
+  function myFunc() {
+      changeColor('#24254d')
+        }        
+</script>
+
+ 
+    <img id="mypic" src="images/whale.jpg">
+
+  <body style="text-align:center;">
+    <h2> </h2>
+
+    <button onclick="myFunc1()">
+    sunset time </button>
+  
+   <h2> </h2>
+
+<script>
+    let result1 = document.getElementById("day");
+
+    function changeColor(color) {
+      document.body.style.background = color;
+  }
+
+  function myFunc1() {
+      changeColor('#e6783d');
+        }        
+</script>
+
+<p> 
+  <div class="container">
+  <div id="output"> </div>
+  <div id="output1"></div>
+  <div id="third1"> </div>
+
+</p>
+
+
+</html>
