@@ -30,3 +30,7 @@ $("#info").click(function(){
   });
 }); 
 
+$("#mypic").dblclick(function(){
+  $(this).hide();
+});
+

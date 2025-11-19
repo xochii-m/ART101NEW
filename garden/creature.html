@@ -28,3 +28,91 @@
     <div id="creature-list"> creatures list will be there </div>    
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- All techy stuff goes here, inside HEAD -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Overall title of your page -->
+   <title>Empty Template</title>
+   <!-- Link to external CSS file -->
+   <link rel="stylesheet" href="creature.css">
+   <!-- jQuery library -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <!-- Link to external JavaScript file -->
+   <script src="creature.js" DEFER></script>
+</head>
+
+<body>
+   <!-- Main content goes here, inside BODY -->
+
+<h1><center>Creatures Garden</h1></center>
+
+<!-- form for creating creatures-->
+<div id="creature-form">
+<h2>Add a creature</h2>
+<input id="crName" type="text">
+<button id="add-creature">Let it roam!</button>
+</div>
+
+<!-- form for outputting creatures-->
+
+<div id="creature-list"> creature list will be there </div> 
+
+
+</body>
+</html>
+// a variable for storing names
+
+//when the button is clicked (event)
+
+    $("#add-creature").click(
+    function(){
+
+    //grab the value from the list
+    let crName = $("#crName").val();
+
+    //check for the field value do not add empty names
+    if ( (crName == "") || (crName.length>12) ){
+        }
+    else { 
+            $("#creature-list").append(crName + ", ");
+        }
+
+
+    // remove the name after it has been added
+    $("#crName").val("");
+
+});
+body {
+  background-color: rgb(115, 170, 188);
+}
+
+#creature-form {
+    background: #d4ea2a;
+    padding: 20px;
+    margin: 50px;
+}
+
+#creature-form DIV {
+    margin-bottom: 20px;
+}
+
+#creature-list {
+    background: rgb(102, 227, 171);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px;
+}
+
+#creature-list>div {
+    background: pink;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
