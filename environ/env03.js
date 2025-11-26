@@ -34,3 +34,9 @@ $("#mypic").dblclick(function(){
   $(this).hide();
 });
 
+$("#mypic").dblclick(function(){
+  $(this).appear();
+});
+
+
+

@@ -1,7 +1,24 @@
 body {
     background-color: #7cd2e8; padding: 50px;
     font-family:cursive;
-    color:rgb(110, 35, 35);}
+    color:rgb(255, 255, 255);}
 
 H1 {color:rgb(216, 239, 234)4; font-family: sans-serif;}
 #mypic {width: 200px;}
+
+.container {
+background-color: rgb(37, 63, 94);
+width:700px;
+display: flex;
+width:auto;
+}
+
+.container div {
+background-color: #ffffff;
+margin: 10px;
+padding: 20px;
+font-size: 15px;
+font-style:italic;
+font-weight: bold;
+width:auto;
+}
